@@ -27,11 +27,11 @@ DisableProgramGroupPage=yes
 PrivilegesRequired=lowest
 OutputDir=C:\Users\MBrooks\pymol
 OutputBaseFilename=pymol-0.1_setup_win_x86-64
-SetupIconFile=C:\Users\MBrooks\projects\pymol\pymol.ico
+;SetupIconFile=C:\Users\MBrooks\projects\pymol\pymol.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
-WizardImageFile=designer\icons\pymol_setup.bmp
+;WizardImageFile=designer\icons\pymol_setup.bmp
 ;WizardSmallImageFile=Evocheck_Setup_55x55.bmp,Evocheck_Setup_64x68.bmp,Evocheck_Setup_92x97.bmp,Evocheck_Setup_92x97.bmp,Evocheck_Setup_92x97.bmp,Evocheck_Setup_110x106.bmp,Evocheck_Setup_119x123.bmp,Evocheck_Setup_138x140.bmp
 
 [Languages]
@@ -41,8 +41,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\MBrooks\projects\pymol\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\MBrooks\projects\pymol\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\MBrooks\projects\pymol_installer\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\MBrooks\projects\pymol_installer\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 
