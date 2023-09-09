@@ -17,7 +17,7 @@ rm_cmd = rf'rm -r "{destination_path_2}"'
 pyinstaller_cmd=r"pyinstaller.exe -w -i pymol.ico --paths=venv\Lib\site-packages --noupx --noconfirm -n pymol --clean main.py"
 os.system(pyinstaller_cmd)
 
-dir_list = ["pymol"]
+dir_list = ["pymol","pmg_qt"]
 dest_dir = "dist/pymol" 
 for directory in dir_list:
     for directory in dir_list:
