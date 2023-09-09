@@ -1,10 +1,8 @@
 import os
 import sys
-from biotoolkit.strutils import replace_text_in_new_file
-from biotoolkit.project import __version__
-from biotoolkit.config import BIOTOOLKIT_PATH
 from pathlib import Path
-from distutils.dir_util import copy_tree
+pyinstaller_cmd=r"pyinstaller.exe -w -i pymol.ico --paths=venv\Lib\site-packages --noupx --noconfirm -n biotoolkit-pymol --clean main.py"
+os.system(pyinstaller_cmd)
 inno_exe = r"C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
 cwd = os.getcwd()
 inno_input_file = os.path.join(cwd,"pymol.iss")
