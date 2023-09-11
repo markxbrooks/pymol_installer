@@ -1,8 +1,8 @@
 import os
 import sys
-from biotoolkit.strutils import replace_text_in_new_file
-from biotoolkit.project import __version__
-from biotoolkit.config import BIOTOOLKIT_PATH
+# from biotoolkit.strutils import replace_text_in_new_file
+# from biotoolkit.project import __version__
+# from biotoolkit.config import BIOTOOLKIT_PATH
 from pathlib import Path
 from distutils.dir_util import copy_tree
 inno_exe = r"C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
