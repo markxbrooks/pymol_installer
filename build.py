@@ -18,8 +18,8 @@ pyinstaller_cmd=r"pyinstaller.exe -w -i pymol.ico --additional-hooks-dir=. --pat
 os.system(pyinstaller_cmd)
 
 #dir_list = ["pymol","PyQt5","pmg_qt"]
-dir_list = ["pymol"]
-dest_dir = "dist/pymol"
+dir_list = ["pymol","pmg_qt"]
+dest_dir = "dist/pymol" 
 for directory in dir_list:
     for directory in dir_list:
         copy_tree(directory, dest_dir + r"/" + directory)
