@@ -6,7 +6,7 @@
 #define MyAppURL "https://www.github.com/"
 #define MyAppExeName "pymol.exe"
 #define MyAppAssocName MyAppName + " File"
-#define MyAppAssocExt ".json"
+#define MyAppAssocExt ".pdb"
 #define MyAppAssocKey StringChange(MyAppAssocName, " ", "") + MyAppAssocExt
 
 [Setup]

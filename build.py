@@ -14,11 +14,12 @@ rm_cmd = rf'rm -r "{destination_path_1}"'
 #os.system(rm_cmd)
 rm_cmd = rf'rm -r "{destination_path_2}"'
 #os.system(rm_cmd)
-pyinstaller_cmd=r"pyinstaller.exe -w -i pymol.ico --paths=venv\Lib\site-packages --noupx --noconfirm -n pymol --clean main.py"
+pyinstaller_cmd=r"pyinstaller.exe -w -i pymol.ico --additional-hooks-dir=. --paths=venv\Lib\site-packages --noupx --noconfirm -n pymol --clean main.py"
 os.system(pyinstaller_cmd)
 
+#dir_list = ["pymol","PyQt5","pmg_qt"]
 dir_list = ["pymol"]
-dest_dir = "dist/pymol" 
+dest_dir = "dist/pymol"
 for directory in dir_list:
     for directory in dir_list:
         copy_tree(directory, dest_dir + r"/" + directory)
@@ -28,5 +29,5 @@ cwd = os.getcwd()
 inno_input_file = os.path.join(cwd,"pymol.iss")
 inno_cmd = rf'"{inno_exe}" {inno_input_file}'
 print(inno_cmd)
-#os.system(inno_cmd)
+os.system(inno_cmd)
 
